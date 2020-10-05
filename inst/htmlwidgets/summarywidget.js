@@ -49,6 +49,11 @@ HTMLWidgets.widget({
             case 'mean':
               value = values.reduce(function(acc, val) {return acc + val;}, 0) / values.length;
               break;
+            case 'max':
+              value = values.reduce(function(previous,current){ 
+                      return previous > current ? previous:current
+                   });
+              break;
           }
 
           if (x.settings.digits !== null) value = value.toFixed(x.settings.digits);
