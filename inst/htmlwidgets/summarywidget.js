@@ -50,9 +50,7 @@ HTMLWidgets.widget({
               value = values.reduce(function(acc, val) {return acc + val;}, 0) / values.length;
               break;
             case 'max':
-              value = values.reduce(function(previous,current){ 
-                      return previous > current ? previous:current
-                   });
+              value = values.reduce(function(a, b) { return Math.max(a, b); });
               break;
           }
 
