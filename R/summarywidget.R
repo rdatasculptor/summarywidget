@@ -20,7 +20,7 @@
 #' @export
 #' @seealso \url{https://kent37.github.io/summarywidget}
 summarywidget <- function(data,
-                          statistic=c("count", "sum", "mean"), column = NULL,
+                          statistic=c("count", "sum", "mean", "max"), column = NULL,
                           selection=NULL, digits=0,
                           width=NULL, height=NULL, elementId = NULL) {
 
